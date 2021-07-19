@@ -1,0 +1,146 @@
+header{
+    background-color: var(--amarillo);
+    padding-bottom: 15px;
+
+}
+header img{
+    margin-left: 20px;
+    margin-top: -40px;
+    margin-bottom: -70px;
+}
+.barra-busqueda{
+    margin-left: 20px;
+    font-size-adjust: 100px;
+}
+.lupa{
+    outline-style: solid;
+    outline-color: var(--grisOscuro);
+    outline-width: thin ;
+    background-color: white;
+    margin-left: 22px;
+    margin-top: 400px;
+}
+header h3{
+    margin-left: 23px;
+    font-size: 12px;
+}
+header nav ul a{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;   
+    margin-left: -40px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li i{
+    margin-left: 5px;
+}
+.burguer-menu{
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    background-color: var(--celeste);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 120px;
+
+}
+
+main{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.articulos{
+    background-color: var(--grisClaro);
+    padding: 15px;
+}
+
+.producto{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.producto img{
+    width: 70%;
+    height: 70%;
+}
+
+.detalleProducto{
+    border-top: 1px solid var(--grisClaro);
+    padding: 15px;
+}
+
+.detalleProducto i{
+    color: var(--verde);
+    border: solid 1px var(--verdeOscuro);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    color: var(--verdeOscuro);
+}
+
+.descripcion{
+    color: var(--grisOscuro);
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+    color: var(--grisOscuro);
+}    
+
+footer section i{
+    font-size: 30px;
+    color: var(--celeste);
+}
+
+@media (max-width: 360px) {
+    .menu-header{
+        display: none;
+    }
+    main{
+        margin-left: 10px;
+    }
+    .descripcion{
+        display: none;
+    }    
+}
+@media (min-width: 361px) {
+    .burguer-menu{
+        display: none;
+    }
+    .producto{
+      box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );  
+    }
+    .precio{
+        font-size: 40px;
+    }    
+    main{
+        
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 769px) {
+    .burguer-menu{
+        display: none;
+    }
+    .producto{
+        box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+    
+    
+}
