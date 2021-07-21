@@ -1,4 +1,7 @@
-
+body {
+    margin: 0;
+    padding: 0;
+  }
 
 header{
     background-color: var(--amarillo);
@@ -6,82 +9,75 @@ header{
 
 }
 header img{
-    margin-left: 20px;
-    margin-top: -40px;
-    margin-bottom: -70px;
+    height: auto;
 }
 header .encabezado{
     display: flex;
+    justify-content: space-around;
 }
 .logo{
-    width: 50%;
+    padding: 10px;
+    width: 40%;
 }
 
 .barraCompleta{
     display: flex;
     align-items: center;
-    width: 50%;
+    justify-content: center;
 }
+
 .barra-busqueda{
-    font-size-adjust: 80px;
+    font-size-adjust: 80px;    
 }
-.lupa{
-    outline-style: solid;
-    outline-color: var(--grisOscuro);
-    outline-width: thin ;
-    background-color: white;
-    margin-left: -15px;
-    height: 19px;
-    margin-top: 1px;
+
+header .input{
+    width: 100%;
 }
-header .h3{
+
+.lupa {
     display: flex;
     justify-content: center;
-    margin-left: 23px;
-    font-size: 12px;
     align-items: center;
+    background-color: white;
+    width: 15%;
+    height: 18px;
+    outline: 1px solid var(--grisOscuro);
+}
+
+header .h3{
+    text-align: center;
+    font-size: 12px;
 }
 
 .menu-header{
-    display: flex;
-    flex-direction: row;
-
-}
-header .menuLeft{
-    display: flex;
-}
-
-.menuRigth{
-    display: flex;
-}
+    display: none
+   }
 
 header nav ul li a{
-    display: inline-block;
     font-size: 12px;
     color: black;
     text-decoration: none;   
-    margin-left: -40px;
 }
 header nav ul li{
     list-style: none;
 }
-header nav ul li i{
-    margin-left: 5px;
-}
+
 .burguer-menu{
     text-align: center;
-    display: inline-block;
     width: 30px;
     background-color: var(--celeste);
     color: white;
     padding: 8px;
     border-radius: 4px;
-    margin-left: 120px;
+    margin: 0 auto;
 
 }
 
+/*Main*/
+
 main{
-    width: 90%;    
+    width: 90%; 
+    margin-left: 5%;   
 }
 
 .titulares{
@@ -109,23 +105,20 @@ main{
     padding: 15px;
 }
 
-.detalleProducto i{
+.detalleProducto i{    
     color: var(--verde);
     border: solid 1px var(--verdeOscuro);
     border-radius: 50%;
     padding: 5px;    
-    text-align: right;
-   
+    margin-left: 85%;
  }
 
 .precio{
     font-size: 18px;
-    width: 30%;
-    
+    width: 30%;    
 }
 
-.descuento{
-    
+.descuento{    
     color: var(--verdeOscuro);
     width: 70%;
     display: flex;
@@ -141,7 +134,10 @@ main{
     color: var(--grisOscuro);
 }
 
+/* Footer */
+
 footer{
+    background-color: white;
     text-align: center;
     font-size: 16px;
     color: var(--grisOscuro);
@@ -152,48 +148,63 @@ footer section i{
     color: var(--celeste);
 }
 
-@media (max-width: 360px) {
+
+/* Tablet*/
+
+@media (min-width: 604px) {
     .menu-header{
-        display: none;
-    }
-    main{
-        margin-left: 10px;
-    }
-    .descripcion{
-        display: none;
-    }    
-}
-@media (min-width: 361px) {
-    .burguer-menu{
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 25px;
     }
     .encabezadoTablet{
         display: flex;
-        
-        flex-wrap: nowrap;
+        justify-content: space-around;
     }
+
+    nav{
+        display: flex;
+        justify-content: start;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    nav ul li a{
+        width: 15px;
+        padding: 5px;
+    }
+    .burguer-menu{
+        display: none;
+    }
+    
     .producto{
       box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );  
       width: 48%;
-    }
-    
-  
-    main{
-        
-        width: 90%;
-        margin-left: 5%;
-    }
-    
+    }     
 }
 
-@media (min-width: 769px) {
-    .burguer-menu{
-        display: none;
+/* Desktop */
+
+@media (min-width: 1100px) {    
+    main{
+        margin-left: 12%;
     }
     .producto{
         box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
         width: 21%;
-    }
-    
-    
+    }    
 }
+
+
+
+
+
+
+
+
+
